@@ -1,0 +1,160 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class islam{
+private:
+    string name;
+ public:
+     void setname(string n){
+     name=n;
+     }
+     string getname(){
+     return name;
+     }
+
+     void is(){
+     cout<<"       "<<endl;
+     cout<<"       "<<endl;
+     cout<<"                           *Islamic Things*    "<<endl;
+     cout<<"       "<<endl;
+     cout<<"       "<<endl;
+     cout<<"                  Zakat     "<<endl;
+     cout<<"                  Quran     "<<endl;
+     cout<<"                  Salat     "<<endl;
+     cout<<"                  Hajj      "<<endl;
+     cout<<"                  Sawm      "<<endl;
+     cout<<"                  Shahada   "<<endl;
+     cout<<"                  Sharia    "<<endl;
+     cout<<"                  Sufism    "<<endl;
+     cout<<"                  Five Pillars of Islam    "<<endl;
+     cout<<"                  Alms          "<<endl;
+     cout<<"                  Eid:          "<<endl;
+     cout<<"                  Eid Al-Adha   "<<endl;
+     cout<<"                  Eid Al-Fitr   "<<endl;
+     cout<<"                  Ramadan       "<<endl;
+     cout<<"                  Faith         "<<endl;
+     }
+
+};
+class facts{
+  public:
+      void in(){
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"                       *Interesting Facts about Islam*    "<<endl;
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+
+    cout<<"             1. Islam means “surrender” or “submission”   "<<endl;
+    cout<<"             2. Haji pilgrimage   "<<endl;
+    cout<<"             3. It’s the second largest religion in the world   "<<endl;
+    cout<<"             4. Muslims should pray 5 times a day   "<<endl;
+    cout<<"                 -Salat al-fajr: dawn, before sunrise   "<<endl;
+    cout<<"                 -Salat al-zuhr: midday, after the sun passes its highest   "<<endl;
+    cout<<"                 -Salat al-‘asr: the late part of the afternoon   "<<endl;
+    cout<<"                 -Salat al-maghrib: just after sunset   "<<endl;
+    cout<<"                 -Salat al-‘isha: between sunset and midnight   "<<endl;
+    cout<<"             5. The Quran is the holy book   "<<endl;
+    cout<<"             6. There are five pillars   "<<endl;
+    cout<<"             7. Jihad does not mean “holy war   "<<endl;
+    cout<<"             9. The Islamic calendar started in 622    "<<endl;
+    cout<<"             11.Shia and Sunni   "<<endl;
+    cout<<"             12.It is a religion for everyone   "<<endl;
+    cout<<"             13.The Quran speaks about tolerance between Muslims and non-Muslims   "<<endl;
+    cout<<"             14.Random facts about Islam   "<<endl;
+    cout<<"                -Indonesia has the largest Muslim population   "<<endl;
+    cout<<"                -Muhammad is important in Islam, but he was only a prophet and shouldn’t be worshiped   "<<endl;
+    cout<<"                -You can convert just by saying “La ilaha illa Allah, Muhammad rasoolu Allah.” "<<endl;
+    cout<<"                -Both pork and alcohol are forbidden (Haram)   "<<endl;
+    cout<<"                -Mecca is a sacred place and only Muslims are allowed to enter   "<<endl;
+    cout<<"                -The Mosque is a place of worship   "<<endl;
+    cout<<"             15.Allah has 99 names and each name has a meaning   "<<endl;
+      }
+};
+
+class glossary:public islam,public facts{
+public:
+
+    void gl(){
+    is();
+    in();
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"                          Islam Glossary   "<<endl;
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"               Allah = God  "<<endl;
+    cout<<"               Quran = The Holy Book  "<<endl;
+    cout<<"               Surah = Chapter in the Quran  "<<endl;
+    cout<<"               Halal = lawful, permitted, good, beneficial, praiseworthy, honorable  "<<endl;
+    cout<<"               Haram = Forbidden  "<<endl;
+    }
+};
+
+class faith:public islam{
+public:
+    void ft(){
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"                        *6 Pillars of Faith*  "<<endl;
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"       "<<endl;
+    cout<<"                   Belief in Allah   "<<endl;
+cout<<"                       Belief in the Angels   "<<endl;
+cout<<"                       Belief in the Holy Books   "<<endl;
+cout<<"                       Belief in the Prophets and Messengers   "<<endl;
+cout<<"                       Belief in the Day of Judgement   "<<endl;
+cout<<"                       Belief in the Will of Allah   "<<endl;
+
+    }
+};
+
+class makkah{
+    public:
+void display(){
+cout<<"         MAKKAH       "<<endl;
+}
+void display(int x){
+cout<<"         KABA GHAR       "<<endl;
+}
+void display(int a,int n){
+cout<<"         KABA SHARIF      "<<endl;
+}
+
+};
+class madina{
+    public:
+void display(){
+cout<<"         MADINA       "<<endl;
+
+  }
+};
+class pillars{
+    public:
+        virtual void shahada()=0;
+        virtual void salat()=0;
+        virtual void zakat()=0;
+        virtual void sawm()=0;
+        virtual void hajj()=0;
+
+};
+
+
+int main(){
+islam i;
+i.setname("                                                           ISLAM             ");
+cout<<i.getname();
+glossary g;
+g.gl();
+faith f;
+f.ft();
+makkah m;
+m.display();
+m.display(0,1);
+madina m1;
+m1.display();
+}
