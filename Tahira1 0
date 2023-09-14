@@ -1,17 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//encapsulation 
 class islam{
 private:
     string name;
  public:
+//set,get function
      void setname(string n){
      name=n;
      }
      string getname(){
      return name;
      }
-
      void is(){
      cout<<"       "<<endl;
      cout<<"       "<<endl;
@@ -47,32 +47,29 @@ class facts{
     cout<<"       "<<endl;
 
     cout<<"             1. Islam means “surrender” or “submission”   "<<endl;
-    cout<<"             2. Haji pilgrimage   "<<endl;
-    cout<<"             3. It’s the second largest religion in the world   "<<endl;
-    cout<<"             4. Muslims should pray 5 times a day   "<<endl;
+    cout<<"             2. It’s the second largest religion in the world   "<<endl;
+    cout<<"             3. Muslims should pray 5 times a day   "<<endl;
     cout<<"                 -Salat al-fajr: dawn, before sunrise   "<<endl;
     cout<<"                 -Salat al-zuhr: midday, after the sun passes its highest   "<<endl;
     cout<<"                 -Salat al-‘asr: the late part of the afternoon   "<<endl;
     cout<<"                 -Salat al-maghrib: just after sunset   "<<endl;
-    cout<<"                 -Salat al-‘isha: between sunset and midnight   "<<endl;
-    cout<<"             5. The Quran is the holy book   "<<endl;
-    cout<<"             6. There are five pillars   "<<endl;
-    cout<<"             7. Jihad does not mean “holy war   "<<endl;
-    cout<<"             9. The Islamic calendar started in 622    "<<endl;
-    cout<<"             11.Shia and Sunni   "<<endl;
-    cout<<"             12.It is a religion for everyone   "<<endl;
-    cout<<"             13.The Quran speaks about tolerance between Muslims and non-Muslims   "<<endl;
-    cout<<"             14.Random facts about Islam   "<<endl;
+    cout<<"                 -Salat al-‘isha: between sunset and midnight   "<<end;
+    cout<<"             4. There are five pillars   "<<endl;
+    cout<<"             5. Jihad does not mean “holy war   "<<endl;
+    cout<<"             6.Shia and Sunni   "<<endl;
+    cout<<"             7.It is a religion for everyone   "<<endl;
+    cout<<"             8.The Quran speaks about tolerance between Muslims and non-Muslims   "<<endl;
+    cout<<"             9.Random facts about Islam   "<<endl;
     cout<<"                -Indonesia has the largest Muslim population   "<<endl;
     cout<<"                -Muhammad is important in Islam, but he was only a prophet and shouldn’t be worshiped   "<<endl;
     cout<<"                -You can convert just by saying “La ilaha illa Allah, Muhammad rasoolu Allah.” "<<endl;
     cout<<"                -Both pork and alcohol are forbidden (Haram)   "<<endl;
     cout<<"                -Mecca is a sacred place and only Muslims are allowed to enter   "<<endl;
     cout<<"                -The Mosque is a place of worship   "<<endl;
-    cout<<"             15.Allah has 99 names and each name has a meaning   "<<endl;
+    cout<<"             10.Allah has 99 names and each name has a meaning   "<<endl;
       }
 };
-
+//multiple inheritance 
 class glossary:public islam,public facts{
 public:
 
@@ -92,7 +89,7 @@ public:
     cout<<"               Haram = Forbidden  "<<endl;
     }
 };
-
+//single inheritance 
 class faith:public islam{
 public:
     void ft(){
@@ -112,9 +109,10 @@ cout<<"                       Belief in the Will of Allah   "<<endl;
 
     }
 };
-
+//polymorphism 
 class makkah{
     public:
+//overloading 
 void display(){
 cout<<"         MAKKAH       "<<endl;
 }
@@ -128,11 +126,13 @@ cout<<"         KABA SHARIF      "<<endl;
 };
 class madina{
     public:
+//override
 void display(){
 cout<<"         MADINA       "<<endl;
 
   }
 };
+//interface class
 class pillars{
     public:
         virtual void shahada()=0;
@@ -142,7 +142,13 @@ class pillars{
         virtual void hajj()=0;
 
 };
-
+//abstract class 
+class aboutislam{
+public:
+void about(){
+cout<<"Do you want to know more about Islam....!"<<endl;}
+virtual void sendmessage()=0;
+};
 
 int main(){
 islam i;
